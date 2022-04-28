@@ -55,8 +55,10 @@ export default {
 <style scoped>
 
     #navbar {
-        width: 100vw;
-        height: 92vh;
+        max-width: 100vw;
+        width: 100%;
+        max-height: 1400px;
+        height: 100%;
         background: rgba(0, 0, 0, 0.6) url("/public/image/banner.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -74,14 +76,14 @@ export default {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 55px;
+        padding: 25px 50px;
         position: absolute;
         top: 100px;
     }
 
     #navbar #nav #logo_url img{
         width: 100%;
-        max-width: 170px;
+        max-width: 130px;
     }
 
     #navbar #nav #informations {
@@ -111,7 +113,7 @@ export default {
     #navbar #nav #informations #btn-login {
         width: 80px;
         height: 34px;
-        font-size: 1.1rem;
+        font-size: 16px;
         font-weight: bolder;
         background-color: #e50914;
         color: #fff;
@@ -141,14 +143,14 @@ export default {
     #navbar #card-text #card-form {
         display: flex;
         justify-content: center;
-        width: 50%;
+        width: 55%;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     #navbar #card-text #card-title h1 {
-        margin-top: 180px;
-        font-size: 4rem;
+        margin-top: 55vh;
+        font-size: 3.1rem;
     }
 
     #navbar #card-text #card-subtitle h4 {
@@ -157,6 +159,8 @@ export default {
     }
 
     #navbar #card-text #card-form {
+        margin-top: 20px;
+        margin-bottom: 100px;
         flex-direction: column;
     }
 
@@ -165,25 +169,57 @@ export default {
     }
 
     #navbar #card-text #inputs {
-        margin-top: 40px;
+        margin-top: 20px;
         width: 100%;
     }
 
     #navbar #card-text #inputs input[type=email] {
-        width: 500px;
-        height: 70px;
+        max-width: 460px;
+        width: 100%;
+        height: 60px;
         padding-left: 20px;
         outline: none;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     #navbar #card-text #inputs input[type=submit] {
-        width: 140px;
-        height: 70px;
+        max-width: 180px;
+        width: 100%;
+        height: 60px;
         background-color: #e50914;
         color: #fff;
         border: none;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         cursor: pointer;
+        font-weight: bold;
+    }
+
+    @media  screen and (max-width: 1160px) {
+        #navbar #card-text #inputs input[type=email] {
+            width: 60%;
+        }
+
+        #navbar #card-text #inputs input[type=submit] {
+            width: 30%;
+        }
+    }
+
+    @media  screen and (max-width: 920px) {
+        #navbar #card-text #inputs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navbar #card-text #inputs input[type=email] {
+            width: 100%;
+        }
+
+        #navbar #card-text #inputs input[type=submit] {
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+        }
     }
 </style>
