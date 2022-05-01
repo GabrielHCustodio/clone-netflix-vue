@@ -20,14 +20,14 @@ export default {
 
 <style scoped>
     #container-box {
-        width: 100%;
+        width: 100vw;
         height: 100%;
-        padding: 50px 260px;
+        padding: 50px 150px;
         display: flex;
         flex-direction: row;
         background-color: black;
         border-bottom: 8px solid #222;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -37,18 +37,16 @@ export default {
 
     #container-box:nth-child(2),
     #container-box:nth-child(4) {
+        display: flex;
         flex-direction: row-reverse;
     }
 
     #container-box #box-text {
+        width: 70%;
         display: flex;
         flex-direction: column;
         color: white;
-    }
-
-    #container-box #box-text:nth-child(1),
-    #container-box #box-text:nth-child(3) {
-        padding-right: 60px;
+        margin-right: 30px;
     }
 
     #container-box #box-text h1 {
@@ -61,7 +59,8 @@ export default {
     }
 
     #container-box #box-img img {
-        width: 530px;
+        margin-right: 10px;
+        width: 450px;
     }
 
     #container-box #box-img:nth-child(2),
