@@ -1,15 +1,19 @@
 <template>
   <div class="home">
+    <NavbarNetflix />
     <boxesInfo 
       v-for="(b , index) in boxes" :key="index"
       :title="b.msg" :description="b.description" :img="b.url" />
     <PerguntasFaq />
+    <FooterNetflix/>
   </div>
 </template>
 
 <script>
 import boxesInfo from "../components/Boxes.vue"
 import PerguntasFaq from "../components/Perguntas.vue"
+import NavbarNetflix from "../components/Navbar.vue"
+import FooterNetflix from "../components/Footer.vue"
 
 export default {
   name: 'HomeView',
@@ -40,7 +44,9 @@ export default {
   },
   components: {
     boxesInfo,
-    PerguntasFaq
+    PerguntasFaq,
+    NavbarNetflix,
+    FooterNetflix
   }
 }
 </script>

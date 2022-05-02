@@ -51,7 +51,6 @@ export default {
     #navbar {
         max-width: 100vw;
         width: 100%;
-        max-height: 1400px;
         height: 100%;
         background: rgba(0, 0, 0, 0.6) url("/public/image/banner.jpg");
         background-size: cover;
@@ -59,9 +58,8 @@ export default {
         border-bottom: 8px solid #222;
         background-blend-mode: darken;
         position: relative;
-        top: -100px;
         display: flex;
-        flex-basis: column;
+        flex-direction: column;
     }
 
     #navbar #nav {
@@ -72,7 +70,6 @@ export default {
         justify-content: space-between;
         padding: 25px 50px;
         position: absolute;
-        top: 100px;
     }
 
     #navbar #nav #logo_url img{
@@ -130,6 +127,7 @@ export default {
         align-items: center;
         justify-content: center;
         color: #fff;
+        margin-top: -100px;
     }
 
     #navbar #card-text #card-title,

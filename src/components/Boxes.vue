@@ -20,7 +20,7 @@ export default {
 
 <style scoped>
     #container-box {
-        width: 100vw;
+        width: 100%;
         height: 100%;
         padding: 50px 150px;
         display: flex;
@@ -30,11 +30,7 @@ export default {
         justify-content: space-between;
         align-items: center;
     }
-
-    #container-box:nth-child(1) {
-        margin-top: -100px;
-    }
-
+    
     #container-box:nth-child(2),
     #container-box:nth-child(4) {
         display: flex;
@@ -63,8 +59,8 @@ export default {
         width: 450px;
     }
 
-    #container-box #box-img:nth-child(2),
-    #container-box #box-img:nth-child(4) {
+    #container-box #box-img:nth-child(1),
+    #container-box #box-img:nth-child(3) {
         padding-right: 60px;
     }
 

@@ -1,17 +1,10 @@
 <template>
-  <NavbarNetflix />
   <router-view/>
 </template>
 
 
 <script>
-import NavbarNetflix from "./components/Navbar.vue"
-
-export default {
-  components: {
-    NavbarNetflix
-  }
-}
+export default {}
 </script>
 
 <style>
